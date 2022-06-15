@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="StartSceneSkin" width="720" height="1280" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" >
+	<w:Config id="16795d2a393" ></w:Config>
+	<e:Rect width="720" height="1280" fillColor="0x4c947a" left="0" top="0"/>
+	<e:Image left="0" right="0" top="0" bottom="0" source="bg_png" fillMode="scale" />
+	<e:Image id="musicImg" width="74" height="74" x="646" y="73" source="music_png" anchorOffsetX="37" anchorOffsetY="37" />
+	<e:Image width="720" height="2" y="14" source="topline_png" fillMode="repeat" anchorOffsetX="0" anchorOffsetY="0"
+	         left="0" />
+	<e:Group id="popRewardGroup" width="720" height="1280" left="0" top="0" visible="false">
+		<e:Rect width="720" height="1280" scaleX="1" scaleY="1" alpha="0.6" left="0" top="0"/>
+		<ns1:RewardMy id="popRewardMy" width="640" height="660" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0" verticalCenter="0" x="-168" y="-170" scaleX="1" scaleY="1"/>
+	</e:Group>
+	<e:Group id="popRuleGroup" width="720" height="1280" left="0" top="0" visible="false">
+		<e:Rect width="720" height="1280" left="0" top="0" alpha=".6"/>
+		<ns1:Rule width="640" height="880" horizontalCenter="0" verticalCenter="0"/>
+	</e:Group>
+	<e:Label id="cqmh" x="-1.049" y="144" height="161.679" width="717.201" text="抽取盲盒" size="150" fontFamily="KaiTi"
+	         bold="true" textAlign="center" verticalAlign="middle" textColor="0x5579C3" />
+	<e:Image width="612.661" height="70.129" y="341.53" source="title_line_png" x="55.48" />
+	<e:Label text="免费福利等你抽" x="57.782" y="326.128" anchorOffsetX="-10.895" anchorOffsetY="-18.679" width="301.163"
+	         height="55.323" verticalAlign="middle" textAlign="center" size="40" textColor="0x5579C3" />
+	<e:Label text="gogogo" x="420" y="349.871" width="210.743" height="55.323" verticalAlign="middle" textAlign="center"
+	         size="50" textColor="0x5579C3" bold="true" italic="true" />
+	<e:Group id="btnGroup" x="14.918" y="637.517" height="303.011" width="702.025">
+		<e:Image id="bline_0" width="220" height="220" x="20.189" y="67.763" source="blind_top_box_png"  anchorOffsetY="28.85"/>
+		<e:Image id="bline_1" width="220" height="220" x="243.609" y="38.494" source="blind_top_box_png" />
+		<e:Image id="bline_2" width="220" height="220" x="466.589" y="37.662" source="blind_top_box_png" />
+		<!-- <e:Image id="bline_3" width="180" height="270" x="0" y="272.73" source="blind_bottom_box_png" />
+		<e:Image id="bline_4" width="180" height="270" x="196.9" y="272.73" source="blind_bottom_box_png" />
+		<e:Image id="bline_5" width="180" height="270" x="390.07" y="272.73" source="blind_bottom_box_png" />
+		-->
+	</e:Group>
+</e:Skin>

@@ -1,11 +1,11 @@
 class SceneManager {
     public _stage: egret.DisplayObjectContainer; // 根场景
     public startScene: StartScene;
-    public mainScene: MainScene;
+    // public mainScene: MainScene;
 
     constructor() {
         this.startScene = new StartScene();
-        this.mainScene = new MainScene();
+        // this.mainScene = new MainScene();
     }
 
     // 获取单例
@@ -19,7 +19,8 @@ class SceneManager {
 
     // 删除其他场景
     private removeOtherScene(scene) {
-        let arr = [this.startScene, this.mainScene];
+        // , this.mainScene
+        let arr = [this.startScene];
         arr.forEach(item => {
             if (scene === item) {
                 return
@@ -42,8 +43,8 @@ class SceneManager {
     }
 
     // 游戏场景
-    static toMainScene() {
-        this.instance.removeOtherScene(this.instance.mainScene)
-        this.instance._stage.addChild(this.instance.mainScene)
-    }
+    // static toMainScene() {
+    //     this.instance.removeOtherScene(this.instance.mainScene)
+    //     this.instance._stage.addChild(this.instance.mainScene)
+    // }
 }

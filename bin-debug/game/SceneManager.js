@@ -2,9 +2,10 @@ var __reflect = (this && this.__reflect) || function (p, c, t) {
     p.__class__ = c, t ? t.push(c) : t = [c], p.__types__ = p.__types__ ? t.concat(p.__types__) : t;
 };
 var SceneManager = (function () {
+    // public mainScene: MainScene;
     function SceneManager() {
         this.startScene = new StartScene();
-        this.mainScene = new MainScene();
+        // this.mainScene = new MainScene();
     }
     Object.defineProperty(SceneManager, "instance", {
         get: function () {
@@ -19,7 +20,8 @@ var SceneManager = (function () {
     // 删除其他场景
     SceneManager.prototype.removeOtherScene = function (scene) {
         var _this = this;
-        var arr = [this.startScene, this.mainScene];
+        // , this.mainScene
+        var arr = [this.startScene];
         arr.forEach(function (item) {
             if (scene === item) {
                 return;
@@ -37,11 +39,6 @@ var SceneManager = (function () {
     SceneManager.toStartScene = function () {
         this.instance.removeOtherScene(this.instance.startScene);
         this.instance._stage.addChild(this.instance.startScene);
-    };
-    // 游戏场景
-    SceneManager.toMainScene = function () {
-        this.instance.removeOtherScene(this.instance.mainScene);
-        this.instance._stage.addChild(this.instance.mainScene);
     };
     return SceneManager;
 }());
